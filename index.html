@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Simple Form</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form novalidate>
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" autocomplete="off" required>
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="row">
+            <label for="country">Country</label>
+            <input type="text" placeholder="country" id="country" autocomplete="off" required>
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="row">
+            <label for="zipcode">Zip Code</label>
+            <input type="number" placeholder="zipcode" id="zipcode" autocomplete="off" required>
+            <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="row">
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password" required minlength="8" maxlength="16">
+            <span class="error" aria-live="polite"></span>
+        </div>
+
+        <div class="row">
+            <label for="passwordConfirm">Password (again)</label>
+            <input type="password" placeholder="password (again)" id="passwordConfirm" required minlength="8" maxlength="16">            
+            <span class="error" aria-live="polite"></span>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
